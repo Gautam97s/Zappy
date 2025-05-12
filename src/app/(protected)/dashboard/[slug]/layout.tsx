@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '@/components/global/sidebar/layout'
+import Sidebar from '@/components/global/sidebar'
 
 type Props = {
     children: React.ReactNode
@@ -9,7 +9,7 @@ type Props = {
 const Layout = ({children, params}: Props) => {
   return (
     <div className='p-3'>
-        <Sidebar/> 
+        <Sidebar slug={params.slug}/> 
     </div>
   )
 }

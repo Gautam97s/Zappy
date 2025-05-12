@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Spinner } from './spinner'
 import { cn } from '@/lib/utils'
@@ -9,7 +10,7 @@ type Props = {
     color?: string
 }
 
-const Index = ({state, clasdsName, children, color}: Props) => {
+const Loader = ({state, clasdsName, children, color}: Props) => {
   return (
     state? (
         <div className={cn(clasdsName)}>
@@ -21,4 +22,4 @@ const Index = ({state, clasdsName, children, color}: Props) => {
   )
 }
 
-export default Index
+export default Loader

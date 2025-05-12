@@ -1,5 +1,5 @@
 import React from 'react'
-import Loader from '@/components/global/Loader/Index'
+import Loader from '@/components/global/loader/Index'
 
 
 type Props = {}
