@@ -4,7 +4,7 @@ import { usePath } from "@/hooks/use-nav";
 import { LogoSmall } from "@/svgs/logo-small";
 import Items from "./items";
 import { Separator } from "@/components/ui/separator";
-import ClerkAuthSate from "../clerk-auth-state";
+import ClerkAuthState from "../clerk-auth-state";
 import { HelpDuoToneWhite } from "@/icons";
 import SubscriptionPlan from "../subscription-plan";
 import UpgradeCard from "./upgrade";
@@ -16,7 +16,7 @@ type Props = {
 const Sidebar = ({ slug }: Props) => {
   const { page } = usePath();
   return (
-    <div className="w-[250px] border border-[#545454] fixed left-0 lg:inline-block bg-gradient-to-b from-[#768BDD] via-[#171717] to-[#768BDD] bottom-0 top-0 m-3 rounded-3xl overflow-hidden">
+    <div className="w-[250px] border border-[#545454] fixed left-0 lg:inline-block bg-gradient-to-b from-[#768BDD] via-[#171717] to-[#768BDD] hidden bottom-0 top-0 m-3 rounded-3xl overflow-hidden">
       <div className="flex flex-col gap-y-5 w-full h-full p-3 bg-[#0e0e0e] bg-opacity-90 bg-clip-padding backdrop-blur-3xl">
         {/* Logo Container */}
         <div className="flex justify-center p-5">
@@ -34,7 +34,7 @@ const Sidebar = ({ slug }: Props) => {
         </div>
         <div className="flex flex-col gap-y-5">
           <div className="flex gap-x-2">
-            <ClerkAuthSate />
+            <ClerkAuthState />
             <p className="text-[#9B9CA0]">Profile</p>
           </div>
           <div className="flex gap-x-3">
