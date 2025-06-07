@@ -13,6 +13,8 @@ import { Separator } from '@/components/ui/separator'
 import { LogoSmall } from '@/svgs/logo-small'
 import CreateAutomation from '../create-automation'
 import Search from '../search'
+import Notification from './Notifications'
+import MainBreadCrumb from '../main-bread-crumb'
 
 
 type Props = {
@@ -64,7 +66,12 @@ const Navdbar = ({ slug }: Props) => {
                 </span>
                 <Search />
                 <CreateAutomation />
+                <Notification />
             </div>
+            <MainBreadCrumb 
+                page={page === slug ? 'Home' : page}
+                slug={slug}
+            />
         </div>
     )
 }

@@ -125,12 +125,11 @@
 .radial--gradient {
   background-image: radial-gradient(
     ellipse farthest-side,
-    rgba(51, 82, 204, 0.15) 20%,
+    rgba(20, 20, 30, 0.5) 10%,
     #09090b 100%
   );
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
+
 
 .radial--gradient--pink {
   background-image: radial-gradient(
